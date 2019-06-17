@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6216801A22B63A7800F79FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216801922B63A7800F79FEA /* AppDelegate.swift */; };
+		6216802422B63A7A00F79FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6216802222B63A7900F79FEA /* Main.storyboard */; };
+		6216802A22B63A9100F79FEA /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624117B022AB1FAE00FD96EA /* BoardView.swift */; };
+		6216803122B6416F00F79FEA /* FifteenPuzzleWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6216803022B6416F00F79FEA /* FifteenPuzzleWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6216803722B6416F00F79FEA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6216803522B6416F00F79FEA /* Interface.storyboard */; };
+		6216804022B6417000F79FEA /* FifteenPuzzleWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6216803F22B6417000F79FEA /* FifteenPuzzleWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6216804722B6417000F79FEA /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216804622B6417000F79FEA /* HostingController.swift */; };
+		6216804922B6417000F79FEA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216804822B6417000F79FEA /* ExtensionDelegate.swift */; };
+		6216805B22B641F600F79FEA /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624117B022AB1FAE00FD96EA /* BoardView.swift */; };
+		622A906622B64C6400D870B7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A906522B64C6400D870B7 /* Board.swift */; };
+		622A906722B64C6400D870B7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A906522B64C6400D870B7 /* Board.swift */; };
+		622A906822B64C6400D870B7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A906522B64C6400D870B7 /* Board.swift */; };
+		624117AD22AB1FAE00FD96EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624117AC22AB1FAE00FD96EA /* AppDelegate.swift */; };
+		624117AF22AB1FAE00FD96EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624117AE22AB1FAE00FD96EA /* SceneDelegate.swift */; };
+		624117B122AB1FAE00FD96EA /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624117B022AB1FAE00FD96EA /* BoardView.swift */; };
+		624117B922AB1FAF00FD96EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624117B722AB1FAF00FD96EA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6216803222B6416F00F79FEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624117A122AB1FAE00FD96EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6216802F22B6416F00F79FEA;
+			remoteInfo = "FifteenPuzzleWatch WatchKit App";
+		};
+		6216804122B6417000F79FEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624117A122AB1FAE00FD96EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6216803E22B6417000F79FEA;
+			remoteInfo = "FifteenPuzzleWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6216805222B6417100F79FEA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6216803122B6416F00F79FEA /* FifteenPuzzleWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6216805522B6417100F79FEA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6216804022B6417000F79FEA /* FifteenPuzzleWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6216801722B63A7800F79FEA /* FifteenPuzzleMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FifteenPuzzleMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6216801922B63A7800F79FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6216802322B63A7A00F79FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6216802522B63A7A00F79FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6216802622B63A7A00F79FEA /* FifteenPuzzleMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FifteenPuzzleMac.entitlements; sourceTree = "<group>"; };
+		6216802D22B6416F00F79FEA /* FifteenPuzzleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FifteenPuzzleWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6216803022B6416F00F79FEA /* FifteenPuzzleWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FifteenPuzzleWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6216803622B6416F00F79FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6216803A22B6417000F79FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6216803F22B6417000F79FEA /* FifteenPuzzleWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FifteenPuzzleWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6216804622B6417000F79FEA /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		6216804822B6417000F79FEA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6216804F22B6417100F79FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		622A906522B64C6400D870B7 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		624117A922AB1FAE00FD96EA /* FifteenPuzzleiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FifteenPuzzleiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		624117AC22AB1FAE00FD96EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		624117AE22AB1FAE00FD96EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		624117B022AB1FAE00FD96EA /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		624117B822AB1FAF00FD96EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		624117BA22AB1FAF00FD96EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6216801422B63A7800F79FEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6216803C22B6417000F79FEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624117A622AB1FAE00FD96EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6216801822B63A7800F79FEA /* FifteenPuzzleMac */ = {
+			isa = PBXGroup;
+			children = (
+				6216801922B63A7800F79FEA /* AppDelegate.swift */,
+				6216802222B63A7900F79FEA /* Main.storyboard */,
+				6216802522B63A7A00F79FEA /* Info.plist */,
+				6216802622B63A7A00F79FEA /* FifteenPuzzleMac.entitlements */,
+			);
+			path = FifteenPuzzleMac;
+			sourceTree = "<group>";
+		};
+		6216803422B6416F00F79FEA /* FifteenPuzzleWatch */ = {
+			isa = PBXGroup;
+			children = (
+				6216803522B6416F00F79FEA /* Interface.storyboard */,
+				6216803A22B6417000F79FEA /* Info.plist */,
+			);
+			path = FifteenPuzzleWatch;
+			sourceTree = "<group>";
+		};
+		6216804322B6417000F79FEA /* FifteenPuzzleWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6216804622B6417000F79FEA /* HostingController.swift */,
+				6216804822B6417000F79FEA /* ExtensionDelegate.swift */,
+				6216804F22B6417100F79FEA /* Info.plist */,
+			);
+			path = "FifteenPuzzleWatch Extension";
+			sourceTree = "<group>";
+		};
+		6216805C22B6464B00F79FEA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				622A906522B64C6400D870B7 /* Board.swift */,
+				624117B022AB1FAE00FD96EA /* BoardView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		624117A022AB1FAE00FD96EA = {
+			isa = PBXGroup;
+			children = (
+				6216805C22B6464B00F79FEA /* Shared */,
+				624117AB22AB1FAE00FD96EA /* FifteenPuzzleiOS */,
+				6216801822B63A7800F79FEA /* FifteenPuzzleMac */,
+				6216803422B6416F00F79FEA /* FifteenPuzzleWatch */,
+				6216804322B6417000F79FEA /* FifteenPuzzleWatch Extension */,
+				624117AA22AB1FAE00FD96EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		624117AA22AB1FAE00FD96EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				624117A922AB1FAE00FD96EA /* FifteenPuzzleiOS.app */,
+				6216801722B63A7800F79FEA /* FifteenPuzzleMac.app */,
+				6216802D22B6416F00F79FEA /* FifteenPuzzleWatch.app */,
+				6216803022B6416F00F79FEA /* FifteenPuzzleWatch WatchKit App.app */,
+				6216803F22B6417000F79FEA /* FifteenPuzzleWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		624117AB22AB1FAE00FD96EA /* FifteenPuzzleiOS */ = {
+			isa = PBXGroup;
+			children = (
+				624117AC22AB1FAE00FD96EA /* AppDelegate.swift */,
+				624117AE22AB1FAE00FD96EA /* SceneDelegate.swift */,
+				624117B722AB1FAF00FD96EA /* LaunchScreen.storyboard */,
+				624117BA22AB1FAF00FD96EA /* Info.plist */,
+			);
+			path = FifteenPuzzleiOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6216801622B63A7800F79FEA /* FifteenPuzzleMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6216802922B63A7A00F79FEA /* Build configuration list for PBXNativeTarget "FifteenPuzzleMac" */;
+			buildPhases = (
+				6216801322B63A7800F79FEA /* Sources */,
+				6216801422B63A7800F79FEA /* Frameworks */,
+				6216801522B63A7800F79FEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FifteenPuzzleMac;
+			productName = FifteenPuzzleMac;
+			productReference = 6216801722B63A7800F79FEA /* FifteenPuzzleMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6216802C22B6416F00F79FEA /* FifteenPuzzleWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6216805A22B6417100F79FEA /* Build configuration list for PBXNativeTarget "FifteenPuzzleWatch" */;
+			buildPhases = (
+				6216802B22B6416F00F79FEA /* Resources */,
+				6216805222B6417100F79FEA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6216803322B6416F00F79FEA /* PBXTargetDependency */,
+			);
+			name = FifteenPuzzleWatch;
+			productName = FifteenPuzzleWatch;
+			productReference = 6216802D22B6416F00F79FEA /* FifteenPuzzleWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		6216802F22B6416F00F79FEA /* FifteenPuzzleWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6216805922B6417100F79FEA /* Build configuration list for PBXNativeTarget "FifteenPuzzleWatch WatchKit App" */;
+			buildPhases = (
+				6216802E22B6416F00F79FEA /* Resources */,
+				6216805522B6417100F79FEA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6216804222B6417000F79FEA /* PBXTargetDependency */,
+			);
+			name = "FifteenPuzzleWatch WatchKit App";
+			productName = "FifteenPuzzleWatch WatchKit App";
+			productReference = 6216803022B6416F00F79FEA /* FifteenPuzzleWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6216803E22B6417000F79FEA /* FifteenPuzzleWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6216805822B6417100F79FEA /* Build configuration list for PBXNativeTarget "FifteenPuzzleWatch WatchKit Extension" */;
+			buildPhases = (
+				6216803B22B6417000F79FEA /* Sources */,
+				6216803C22B6417000F79FEA /* Frameworks */,
+				6216803D22B6417000F79FEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FifteenPuzzleWatch WatchKit Extension";
+			productName = "FifteenPuzzleWatch WatchKit Extension";
+			productReference = 6216803F22B6417000F79FEA /* FifteenPuzzleWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		624117A822AB1FAE00FD96EA /* FifteenPuzzleiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 624117BD22AB1FAF00FD96EA /* Build configuration list for PBXNativeTarget "FifteenPuzzleiOS" */;
+			buildPhases = (
+				624117A522AB1FAE00FD96EA /* Sources */,
+				624117A622AB1FAE00FD96EA /* Frameworks */,
+				624117A722AB1FAE00FD96EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FifteenPuzzleiOS;
+			productName = FifteenPuzzle;
+			productReference = 624117A922AB1FAE00FD96EA /* FifteenPuzzleiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		624117A122AB1FAE00FD96EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Šimon Javora";
+				TargetAttributes = {
+					6216801622B63A7800F79FEA = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					6216802C22B6416F00F79FEA = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					6216802F22B6416F00F79FEA = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					6216803E22B6417000F79FEA = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					624117A822AB1FAE00FD96EA = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 624117A422AB1FAE00FD96EA /* Build configuration list for PBXProject "FifteenPuzzle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 624117A022AB1FAE00FD96EA;
+			productRefGroup = 624117AA22AB1FAE00FD96EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				624117A822AB1FAE00FD96EA /* FifteenPuzzleiOS */,
+				6216801622B63A7800F79FEA /* FifteenPuzzleMac */,
+				6216802C22B6416F00F79FEA /* FifteenPuzzleWatch */,
+				6216802F22B6416F00F79FEA /* FifteenPuzzleWatch WatchKit App */,
+				6216803E22B6417000F79FEA /* FifteenPuzzleWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6216801522B63A7800F79FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6216802422B63A7A00F79FEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6216802B22B6416F00F79FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6216802E22B6416F00F79FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6216803722B6416F00F79FEA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6216803D22B6417000F79FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624117A722AB1FAE00FD96EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624117B922AB1FAF00FD96EA /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6216801322B63A7800F79FEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6216802A22B63A9100F79FEA /* BoardView.swift in Sources */,
+				6216801A22B63A7800F79FEA /* AppDelegate.swift in Sources */,
+				622A906722B64C6400D870B7 /* Board.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6216803B22B6417000F79FEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6216804722B6417000F79FEA /* HostingController.swift in Sources */,
+				6216804922B6417000F79FEA /* ExtensionDelegate.swift in Sources */,
+				622A906822B64C6400D870B7 /* Board.swift in Sources */,
+				6216805B22B641F600F79FEA /* BoardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624117A522AB1FAE00FD96EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624117AD22AB1FAE00FD96EA /* AppDelegate.swift in Sources */,
+				624117AF22AB1FAE00FD96EA /* SceneDelegate.swift in Sources */,
+				622A906622B64C6400D870B7 /* Board.swift in Sources */,
+				624117B122AB1FAE00FD96EA /* BoardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6216803322B6416F00F79FEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6216802F22B6416F00F79FEA /* FifteenPuzzleWatch WatchKit App */;
+			targetProxy = 6216803222B6416F00F79FEA /* PBXContainerItemProxy */;
+		};
+		6216804222B6417000F79FEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6216803E22B6417000F79FEA /* FifteenPuzzleWatch WatchKit Extension */;
+			targetProxy = 6216804122B6417000F79FEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6216802222B63A7900F79FEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6216802322B63A7A00F79FEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6216803522B6416F00F79FEA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6216803622B6416F00F79FEA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		624117B722AB1FAF00FD96EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				624117B822AB1FAF00FD96EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6216802722B63A7A00F79FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FifteenPuzzleMac/FifteenPuzzleMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 775BCHWY3U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FifteenPuzzleMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = Foo.FifteenPuzzleMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6216802822B63A7A00F79FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FifteenPuzzleMac/FifteenPuzzleMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 775BCHWY3U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FifteenPuzzleMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = Foo.FifteenPuzzleMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6216805022B6417100F79FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 775BCHWY3U;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Foo.FifteenPuzzleWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6216805122B6417100F79FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 775BCHWY3U;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Foo.FifteenPuzzleWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6216805322B6417100F79FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 775BCHWY3U;
+				IBSC_MODULE = FifteenPuzzleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = FifteenPuzzleWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = Foo.FifteenPuzzleWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		6216805422B6417100F79FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 775BCHWY3U;
+				IBSC_MODULE = FifteenPuzzleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = FifteenPuzzleWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = Foo.FifteenPuzzleWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		6216805622B6417100F79FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 775BCHWY3U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FifteenPuzzleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Foo.FifteenPuzzleWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		6216805722B6417100F79FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 775BCHWY3U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FifteenPuzzleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Foo.FifteenPuzzleWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		624117BB22AB1FAF00FD96EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		624117BC22AB1FAF00FD96EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		624117BE22AB1FAF00FD96EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 775BCHWY3U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FifteenPuzzleiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Foo.FifteenPuzzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		624117BF22AB1FAF00FD96EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 775BCHWY3U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FifteenPuzzleiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Foo.FifteenPuzzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6216802922B63A7A00F79FEA /* Build configuration list for PBXNativeTarget "FifteenPuzzleMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6216802722B63A7A00F79FEA /* Debug */,
+				6216802822B63A7A00F79FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6216805822B6417100F79FEA /* Build configuration list for PBXNativeTarget "FifteenPuzzleWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6216805622B6417100F79FEA /* Debug */,
+				6216805722B6417100F79FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6216805922B6417100F79FEA /* Build configuration list for PBXNativeTarget "FifteenPuzzleWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6216805322B6417100F79FEA /* Debug */,
+				6216805422B6417100F79FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6216805A22B6417100F79FEA /* Build configuration list for PBXNativeTarget "FifteenPuzzleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6216805022B6417100F79FEA /* Debug */,
+				6216805122B6417100F79FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		624117A422AB1FAE00FD96EA /* Build configuration list for PBXProject "FifteenPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624117BB22AB1FAF00FD96EA /* Debug */,
+				624117BC22AB1FAF00FD96EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		624117BD22AB1FAF00FD96EA /* Build configuration list for PBXNativeTarget "FifteenPuzzleiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624117BE22AB1FAF00FD96EA /* Debug */,
+				624117BF22AB1FAF00FD96EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 624117A122AB1FAE00FD96EA /* Project object */;
+}
